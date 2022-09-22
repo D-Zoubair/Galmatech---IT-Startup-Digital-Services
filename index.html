@@ -11,9 +11,343 @@
 
     <title>Galmatech - IT Startup & Digital Services</title>
 
+    <!-- Link CSS -->
     <link rel="stylesheet" href="src/css/main.css" />
+
+    <!-- Remixicon CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <!-- Header -->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__toggle" id="nav-toggle"
+          ><i class="ri-menu-2-line"></i
+        ></a>
+
+        <a href="#" class="nav__logo">
+          <img src="assets/logo_1.svg" alt="Logo" />
+        </a>
+
+        <i class="ri-contrast-2-line nav__theme"></i>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__list">
+              <img src="assets/logo_1.svg" alt="Logo" />
+            </li>
+            <li class="nav__item">
+              <a href="#home" class="nav__link">Accueil</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">A propos</a>
+            </li>
+            <li class="nav__item">
+              <a href="#services" class="nav__link">Services</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
+
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="main">
+      <!-- Home Section -->
+      <section class="home" id="home">
+        <div class="home__container container grid">
+          <img src="assets/home.svg" alt="Home image" class="home__img" />
+
+          <div class="home__data">
+            <h1 class="home__title">
+              Vous avez une idée Tech? <br />
+              Pensez Galmatech!
+            </h1>
+
+            <p class="home__description">
+              Développez votre stratégie digitale, creez votre Site internet ou
+              votre application (Web et Mobile) et amelioreez l’identité de
+              votre marque avec notre agence.
+            </p>
+
+            <a href="#about" class="button button__flex">
+              En savoir plus sur nous
+              <i class="ri-arrow-right-down-line button__icon"></i>
+            </a>
+          </div>
+
+          <div class="home__social">
+            <span class="home__social-follow">Follow us</span>
+
+            <div class="home__social-links">
+              <a href="#" class="home__social-link" target="_blank">
+                <i class="ri-instagram-line"></i>
+              </a>
+              <a href="#" class="home__social-link" target="_blank">
+                <i class="ri-facebook-fill"></i>
+              </a>
+              <a href="#" class="home__social-link" target="_blank">
+                <i class="ri-twitter-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section-->
+      <section class="cta">
+        <img
+          src="assets/tl.svg"
+          alt=""
+          class="cta__decoration cta__decoration-tl"
+        />
+        <img
+          src="assets/br.svg"
+          alt=""
+          class="cta__decoration cta__decoration-br"
+        />
+
+        <div class="cta__data container">
+          <p class="cta__title">Un nouveau projet?</p>
+          <span class="cta__subtitle">Nous en dire plus</span>
+        </div>
+        <a href="#about" class="button button__flex cta__btn">
+          Nous contacter
+          <i class="ri-arrow-right-down-line button__icon"></i>
+        </a>
+      </section>
+
+      <!-- About Section-->
+      <section class="about section container" id="about">
+        <div class="about__container grid">
+          <div class="about__header">
+            <h2 class="about__title section__title-center">
+              <span>A propos</span> <br />
+              Qui sommes-nous vraiment & Pourquoi nous choisir ?
+            </h2>
+          </div>
+
+          <img src="assets/about.svg" alt="" class="about__img" />
+
+          <div class="about__data">
+            <p class="about__description">
+              GalmaTech est une agence indépendante fondée à Casablanca en 2022.
+              Nous accompagnons nos clients dans la création de site internet,
+              étude, UX, conception, design, développement et SEO. Notre agence
+              web est capable de répondre à tous vos besoins et d'élaborer une
+              véritable stratégie digitale.
+            </p>
+
+            <div class="about__details">
+              <p class="about__details-description">
+                <i class="ri-checkbox-fill about__details-icon"></i>
+                Écoute de vos envies et besoins.
+              </p>
+              <p class="about__details-description">
+                <i class="ri-checkbox-fill about__details-icon"></i>
+                Notre agence vous accompagne tout au long de l’élaborassion de
+                votre projet et vous assure une assistance 7j/7.
+              </p>
+              <p class="about__details-description">
+                <i class="ri-checkbox-fill about__details-icon"></i>
+                Une équipe avec plusieurs années au service de clients et de
+                leurs objectifs.
+              </p>
+              <p class="about__details-description">
+                <i class="ri-checkbox-fill about__details-icon"></i>
+                Nous créons la difference pour vous.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section-->
+      <section class="services section container" id="services">
+        <div class="about__header">
+          <h2 class="about__title section__title-center">
+            <span>Nos services</span> <br />
+            Qu'est-ce que nous fournissons ?
+          </h2>
+        </div>
+
+        <div class="services__container grid">
+          <div class="services__card">
+            <div class="services__card-icone">
+              <i class="ri-global-line"></i>
+            </div>
+            <h3 class="services__card-title">Site Web</h3>
+            <p class="services__card-description">
+              Création de site internet (Vitrine, e-commerce & application web)
+              sur mesure.
+            </p>
+          </div>
+
+          <div class="services__card">
+            <div class="services__card-icone">
+              <i class="ri-pencil-ruler-line"></i>
+            </div>
+            <h3 class="services__card-title">Design graphique</h3>
+            <p class="services__card-description">
+              Création de Charte graphique, identité visuelle (Branding &
+              Digitale), print,UI/UX design et Web design …
+            </p>
+          </div>
+
+          <div class="services__card">
+            <div class="services__card-icone">
+              <i class="ri-line-chart-line"></i>
+            </div>
+            <h3 class="services__card-title">Marketing Digital</h3>
+            <p class="services__card-description">
+              Mise en place de compagne digital que ce soit pour vendre un
+              service ou un produit, pour développer la notoriété d’une marque
+              ou pour pénétrer un nouveau marche.
+            </p>
+          </div>
+
+          <div class="services__card">
+            <div class="services__card-icone">
+              <i class="ri-command-line"></i>
+            </div>
+            <h3 class="services__card-title">Gestion de projet IT</h3>
+            <p class="services__card-description">
+              Optimiser la gestion des projets informatiques ce soit pour
+              (l’installation de matériel informatique, mise à niveau des
+              systèmes existants, la gestion des données, la sécurité et la
+              conformité des données … )
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="contact section" id="contact">
+        <div class="contact__container container grid">
+          <div class="contact__box">
+            <h2 class="section__title contact__title">
+              Un nouveau projet ? <br />
+              <span>Nous en dire plus</span>
+            </h2>
+
+            <div class="contact__data">
+              <div class="contact__information">
+                <h3 class="contact__subtitle">
+                  Appelez-nous !<br />
+                  Pour une assistance instantanée
+                </h3>
+                <span class="contact__description">
+                  <i class="ri-phone-line contact__icon"></i>
+                  0608994943
+                </span>
+              </div>
+
+              <div class="contact__information">
+                <h3 class="contact__subtitle">Par mail</h3>
+                <span class="contact__description">
+                  <i class="ri-mail-line contact__icon"></i>
+                  contract@galmatech.com
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <form action="" class="contact__form">
+            <div class="contact__inputs">
+              <div class="contact__content">
+                <input type="email" placeholder=" " class="contact__input" />
+                <label for="" class="contact__label">Email</label>
+              </div>
+
+              <div class="contact__content">
+                <input type="text" placeholder=" " class="contact__input" />
+                <label for="" class="contact__label">Sujet</label>
+              </div>
+
+              <div class="contact__content contact__area">
+                <textarea
+                  name="message"
+                  placeholder=" "
+                  class="contact__input"
+                ></textarea>
+                <label for="" class="contact__label">Message</label>
+              </div>
+            </div>
+
+            <button class="button button--flex">
+              Send Message
+              <i class="ri-arrow-right-up-line button__icon"></i>
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer section">
+      <div class="footer__container container grid">
+        <div class="footer__content">
+          <a href="#" class="footer__logo">
+            <img src="assets/logo_1.svg" alt="" />
+          </a>
+
+          <h3 class="footer__title">IT Startup & Digital solution</h3>
+        </div>
+
+        <div class="footer__menu container">
+          <div>
+            <h3 class="footer__title">Memu</h3>
+
+            <ul class="footer__data">
+              <li class="">
+                <a href="#home" class="nav__link">Accueil</a>
+              </li>
+              <li class="">
+                <a href="#about" class="nav__link">A Propos</a>
+              </li>
+              <li class="">
+                <a href="#services" class="nav__link">Services</a>
+              </li>
+              <li class="">
+                <a href="#contact" class="nav__link">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="footer__title">Follow us</h3>
+
+            <ul class="footer__data">
+              <div class="footer__social">
+                <a href="https://www.facebook.com/" class="footer__social-link">
+                  <i class="ri-facebook-fill"></i>
+                </a>
+                <a
+                  href="https://www.instagram.com/"
+                  class="footer__social-link"
+                >
+                  <i class="ri-instagram-line"></i>
+                </a>
+                <a href="https://twitter.com/" class="footer__social-link">
+                  <i class="ri-twitter-fill"></i>
+                </a>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <p class="footer__copy">&#169; Bedimcode. All rigths reserved</p>
+    </footer>
 
     <script src="src/js/main.js"></script>
   </body>
