@@ -1,0 +1,15 @@
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  background-color: $white-color;
+
+  z-index: 100;
+  transition: all ease-in-out 0.4s;
+}
+
+/* Nav */
+@import 'nav';
