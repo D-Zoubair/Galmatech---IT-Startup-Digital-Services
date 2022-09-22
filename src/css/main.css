@@ -1,0 +1,70 @@
+/* Variables */
+@font-face {
+  font-family: "Uni Sans";
+  src: url("/src/fonts/Uni-Sans-Regular.otf") format("otf"), url("/src/fonts/Uni-Sans-SemiBold.otf") format("otf"), url("/src/fonts/Uni-Sans-Bold.otf") format("otf"); }
+/* Font */
+/* Typography */
+/* Base */
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none; }
+
+html {
+  scroll-behavior: smooth; }
+
+body,
+button,
+input,
+textarea {
+  font-family: "Uni Sans", sans-serif;
+  font-weight: 500; }
+
+body {
+  margin: 3.5rem 0 0 0;
+  background-color: white;
+  color: #565d59;
+  transition: all ease-in-out .4s; }
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer; }
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 600;
+  color: #030c12; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+/* Reusable CSS classes */
+.container {
+  max-width: 968px;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem; }
+
+.section {
+  padding: 5.5rem 0 1rem; }
+  .section__title, .section__title-center {
+    margin-bottom: 2rem;
+    font-weight: 1.25rem;
+    line-height: 140%; }
+    .section__title-center, .section__title-center-center {
+      text-align: center; }
+
+.grid {
+  display: grid; }
+
+.main {
+  overflow: hidden; }
+
+/*# sourceMappingURL=main.css.map */
