@@ -24,21 +24,16 @@
     <!-- Header -->
     <header class="header" id="header">
       <nav class="nav container">
-        <a href="#" class="nav__toggle" id="nav-toggle"
-          ><i class="ri-menu-2-line"></i
-        ></a>
+        <div href="#" class="nav__toggle" id="nav-toggle">
+          <i class="ri-menu-2-line"></i>
+        </div>
 
         <a href="#" class="nav__logo">
           <img src="assets/logo_1.svg" alt="Logo" />
         </a>
 
-        <i class="ri-contrast-2-line nav__theme"></i>
-
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
-            <li class="nav__list">
-              <img src="assets/logo_1.svg" alt="Logo" />
-            </li>
             <li class="nav__item">
               <a href="#home" class="nav__link">Accueil</a>
             </li>
@@ -57,6 +52,7 @@
             <i class="ri-close-line"></i>
           </div>
         </div>
+        <i class="ri-contrast-2-line nav__theme"></i>
       </nav>
     </header>
 
@@ -65,18 +61,19 @@
       <!-- Home Section -->
       <section class="home" id="home">
         <div class="home__container container grid">
-          <img src="assets/home.svg" alt="Home image" class="home__img" />
+          <img src="assets/home.svg" alt="" class="home__img" />
 
           <div class="home__data">
             <h1 class="home__title">
               Vous avez une idée Tech? <br />
-              Pensez Galmatech!
+              Pensez <span>Galmatech</span>!
             </h1>
 
             <p class="home__description">
-              Développez votre stratégie digitale, creez votre Site internet ou
-              votre application (Web et Mobile) et amelioreez l’identité de
-              votre marque avec notre agence.
+              Développez votre <strong>stratégie digitale</strong>, créez votre
+              <strong>Site internet ou votre application</strong> (Web et
+              Mobile) et ameliorez
+              <strong>l’identité de votre marque</strong> avec notre agence.
             </p>
 
             <a href="#about" class="button button__flex">
@@ -89,13 +86,13 @@
             <span class="home__social-follow">Follow us</span>
 
             <div class="home__social-links">
-              <a href="#" class="home__social-link" target="_blank">
+              <a href="https://www.instagram.com/galmatech/" class="home__social-link" target="_blank">
                 <i class="ri-instagram-line"></i>
               </a>
-              <a href="#" class="home__social-link" target="_blank">
+              <a href="https://www.facebook.com/Galmatechnology-106839985398198" class="home__social-link" target="_blank">
                 <i class="ri-facebook-fill"></i>
               </a>
-              <a href="#" class="home__social-link" target="_blank">
+              <a href="https://twitter.com/GalmaTech" class="home__social-link" target="_blank">
                 <i class="ri-twitter-fill"></i>
               </a>
             </div>
@@ -103,48 +100,26 @@
         </div>
       </section>
 
-      <!-- CTA Section-->
-      <section class="cta">
-        <img
-          src="assets/tl.svg"
-          alt=""
-          class="cta__decoration cta__decoration-tl"
-        />
-        <img
-          src="assets/br.svg"
-          alt=""
-          class="cta__decoration cta__decoration-br"
-        />
-
-        <div class="cta__data container">
-          <p class="cta__title">Un nouveau projet?</p>
-          <span class="cta__subtitle">Nous en dire plus</span>
-        </div>
-        <a href="#about" class="button button__flex cta__btn">
-          Nous contacter
-          <i class="ri-arrow-right-down-line button__icon"></i>
-        </a>
-      </section>
-
       <!-- About Section-->
       <section class="about section container" id="about">
         <div class="about__container grid">
-          <div class="about__header">
-            <h2 class="about__title section__title-center">
-              <span>A propos</span> <br />
-              Qui sommes-nous vraiment & Pourquoi nous choisir ?
-            </h2>
-          </div>
-
           <img src="assets/about.svg" alt="" class="about__img" />
 
           <div class="about__data">
+            <div class="about__header">
+              <h2 class="about__title section__title-center">
+                <span>A propos</span> <br />
+                Qui sommes-nous vraiment & Pourquoi nous choisir ?
+              </h2>
+            </div>
             <p class="about__description">
-              GalmaTech est une agence indépendante fondée à Casablanca en 2022.
-              Nous accompagnons nos clients dans la création de site internet,
-              étude, UX, conception, design, développement et SEO. Notre agence
-              web est capable de répondre à tous vos besoins et d'élaborer une
-              véritable stratégie digitale.
+              GalmaTech est une agence indépendante
+              fondée à Casablanca en 2022. <br> 
+              Nous
+              accompagnons nos clients dans la création de site internet, étude,
+              UX, conception, design, développement et SEO. Notre agence web est
+              capable de répondre à tous vos besoins et d'élaborer une véritable
+              stratégie digitale.
             </p>
 
             <div class="about__details">
@@ -328,16 +303,16 @@
 
             <ul class="footer__data">
               <div class="footer__social">
-                <a href="https://www.facebook.com/" class="footer__social-link">
+                <a href="https://www.facebook.com/Galmatechnology-106839985398198" class="footer__social-link">
                   <i class="ri-facebook-fill"></i>
                 </a>
                 <a
-                  href="https://www.instagram.com/"
+                  href="https://www.instagram.com/galmatech/"
                   class="footer__social-link"
                 >
                   <i class="ri-instagram-line"></i>
                 </a>
-                <a href="https://twitter.com/" class="footer__social-link">
+                <a href="https://twitter.com/GalmaTech" class="footer__social-link">
                   <i class="ri-twitter-fill"></i>
                 </a>
               </div>
@@ -349,6 +324,15 @@
       <p class="footer__copy">&#169; Galmatech. All rigths reserved</p>
     </footer>
 
+    <!-- Scroll UP -->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-fill scrollup__icon"></i>
+    </a>
+
+    <!-- Link scrollreaveal JS -->
+    <script src="src/js/scrollreveal.min.js"></script>
+
+    <!-- Link JS -->
     <script src="src/js/main.js"></script>
   </body>
 </html>

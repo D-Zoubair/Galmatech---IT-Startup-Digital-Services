@@ -6,8 +6,6 @@
 
   background-color: $first-color;
 
-  text-align: center;
-
   &__decoration {
     position: absolute;
     opacity: 0.8;
@@ -26,6 +24,8 @@
   }
 
   &__data {
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 2rem;
   }
 
@@ -33,6 +33,7 @@
     margin-bottom: .4rem;
     font-size: $h2-fontsize;
     color: $white-color;
+    text-align: center;
   }
 
   &__subtitle {
