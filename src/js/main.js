@@ -80,7 +80,7 @@ sr.reveal(`.about__title `);
 sr.reveal(`.about__img, .contact__box`, { origin: "left" });
 sr.reveal(`.about__data, .contact__form`, { origin: "right" });
 sr.reveal(
-  `.services__card`,
+  `.services__card, .services__card2`,
   { origin: "right" },
   {
     interval: 1000,

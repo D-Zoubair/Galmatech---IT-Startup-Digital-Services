@@ -162,7 +162,15 @@ img {
   .home__img {
     justify-self: center;
     width: 300px;
-    order: 2; }
+    order: 2;
+    animation: float 4s ease-in-out infinite; }
+@keyframes float {
+  0% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(-1.5rem); }
+  100% {
+    transform: translateY(0); } }
   .home__data {
     text-align: center; }
   .home__title {
@@ -271,7 +279,8 @@ img {
 .about__img {
   margin-bottom: 1.5rem;
   justify-self: center;
-  width: 280px; }
+  width: 340px;
+  order: 1; }
 .about__description {
   margin-bottom: 2rem;
   line-height: 140%; }
@@ -316,6 +325,29 @@ img {
       margin-bottom: 0.5rem; }
     .services__card-description {
       font-size: 0.813rem; }
+  .services__card2 {
+    background-color: #04578b;
+    padding: 2.5rem 3rem 2rem 1.5rem;
+    border: 2px solid white;
+    border-radius: 1rem; }
+    .services__card2:hover .services__card-icone {
+      transform: translateY(-0.25rem); }
+    .services__card2-icone {
+      display: inline-flex;
+      background-color: white;
+      color: #04578b;
+      padding: .5rem .5rem;
+      border-radius: .25rem;
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+      transition: all ease-in-out .3s; }
+    .services__card2-title {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+      color: #FFF; }
+    .services__card2-description {
+      font-size: 0.813rem;
+      color: #FFF; }
 
 /* Contact Section*/
 .contact {
@@ -497,6 +529,9 @@ img {
       order: 1; }
     .home__social {
       top: 30%; }
+
+  .about__data {
+    order: 2; }
 
   .footer__container {
     column-gap: 3rem; } }

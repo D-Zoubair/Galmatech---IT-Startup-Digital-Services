@@ -82,6 +82,13 @@
       top: 30%;
     }
   }
+  
+  .about {
+    &__data {
+      order: 2;
+    }
+  }
+
 
   .footer {
     &__container {
@@ -118,15 +125,18 @@
   .nav__logo {
     width: 130px;
   }
+  
   .home {
     padding: 10rem 0 5rem;
     
     &__title {
         font-size: $h1-fontsize;
     }
+
     &__img {
       width: 350px;
     }
+
     &__description {
       padding-right: 5rem;
     }
@@ -135,6 +145,7 @@
   .about__container {
     justify-content: center;
     align-items: center;
+
     & span {
         font-size: $h3-fontsize;
     }
